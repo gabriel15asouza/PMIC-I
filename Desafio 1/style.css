@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    border: 2px red;
+
+    background-image: 
+    url(Imagens/fundo.png);
+}
+
+#fundo2{
+    background-image:
+    url(Imagens/fundo2.png);
+}
+
+.link{
+    /* float:right */
+    padding-left: ;
+}
+
+h4 {
+    text-align: center
+}
