@@ -1,22 +1,35 @@
 body {
-    padding: 0;
+    background-image: url(Imagens/fundo.png);
     margin: 0 auto;
     width: 80%;
     border: 2px red;
-
-    background-image: 
-    url(Imagens/fundo.png);
+    border-style: dashed;
+    
 }
 
-#fundo2{
-    background-image:
-    url(Imagens/fundo2.png);
+body#fundo2{
+    background-image: url(Imagens/fundo2.png);
+}
+
+header{
+    padding-top: 1%;
+    display: flex;
+    align-items: baseline;
 }
 
 .link{
-    float:right
+    padding-left:61%;
 }
 
-h4 {
+#capa{
+    padding-top: 2.9%;
+}
+
+input[type=text]{
+    margin-bottom: 10px;
+}
+
+footer {
     text-align: center
 }
+
