@@ -1,10 +1,8 @@
 body {
     background-image: url(Imagens/fundo.png);
+    background-size: 145.4px;
     margin: 0 auto;
-    width: 80%;
-    border: 2px red;
-    border-style: dashed;
-    
+    width: 80%;  
 }
 
 body#fundo2{
@@ -12,21 +10,30 @@ body#fundo2{
 }
 
 header{
-    padding-top: 1%;
+    padding-top: 2%;
     display: flex;
     align-items: baseline;
 }
 
+#logo{
+    height: 80px;
+}
+
 .link{
-    padding-left:61%;
+    padding-left: 53%;
 }
 
 #capa{
-    padding-top: 2.9%;
+    height: fit-content;
+    padding-top: 1.7%;
 }
 
 input[type=text]{
     margin-bottom: 10px;
+}
+
+input#description{
+    height: 70px;
 }
 
 footer {
