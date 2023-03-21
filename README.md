@@ -1,2 +1,2 @@
 # PMIC-I
- Programção em MicroInformática
+ Programação em MicroInformática
