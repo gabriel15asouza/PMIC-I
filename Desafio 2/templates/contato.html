@@ -1,0 +1,35 @@
+{%extends 'base.html' %}
+{%block content%}
+    <article>
+        <h1>Entre em contato</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quidem, ullam ea assumenda deserunt a!
+
+        </p>
+
+        <hr>
+
+        <form>
+            <div class="text">
+                <label for="email">Seu e-mail:</label><br>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div class="text">
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" name="assunto" id="assunto">
+            </div>
+
+            <div class="text">
+                <label for="descrição">Descrição:</label><br>
+                <input type="text" name="descrição" id='description'>
+            </div>
+
+            <div>
+                <input type="button" onclick="alert('Entenderam? Também não')" value="Enviar">
+            </div>
+        </form>
+
+    </article>
+
+{%endblock%}
