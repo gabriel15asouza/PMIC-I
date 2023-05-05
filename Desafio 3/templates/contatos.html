@@ -1,5 +1,5 @@
 {%extends 'base.html' %}
-{%block title%}UNES Universidade - Contato{%endblock%}
+{%block title%}UNES Universidade - Contatos{%endblock%}
 {%block body%} id= 'fundo2' {%endblock%}
 {%block content%}
     <article>
@@ -11,24 +11,24 @@
 
         <hr>
 
-        <form>
+        <form action="/contatos" method="post">
             <div class="text">
                 <label for="email">Seu e-mail:</label><br>
-                <input type="text" id="EMAIL" name="email">
+                <input type="text" name="email" id="email">
             </div>
 
             <div class="text">
                 <label for="assunto">Assunto:</label><br>
-                <input type="text" name="ASSUNTO" id="assunto">
+                <input type="text" name="assunto" id="assunto">
             </div>
 
             <div class="text">
                 <label for="descrição">Descrição:</label><br>
-                <input type="text" name="DESCRICAO" id='description'>
+                <input type="text" name="descricao" id='descricao'>
             </div>
 
             <div>
-                <input type="button" onclick="alert('Entenderam? Também não')" value="Enviar">
+                <input type="submit" onclick="alert('Entenderam? Também não')" value="Enviar">
             </div>
         </form>
 
