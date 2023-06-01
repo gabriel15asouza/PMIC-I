@@ -1,0 +1,37 @@
+{%extends 'base.html' %}
+{%block title%}UNES Universidade - Contatos{%endblock%}
+{%block body%} id= 'fundo2' {%endblock%}
+{%block content%}
+    <article>
+        <h1>Entre em contato</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quidem, ullam ea assumenda deserunt a!
+
+        </p>
+
+        <hr>
+
+        <form action="/contatos" method="post">
+            <div class="text">
+                <label for="email">Seu e-mail:</label><br>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="text">
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" name="assunto" id="assunto">
+            </div>
+
+            <div class="text">
+                <label for="descrição">Descrição:</label><br>
+                <input type="text" name="descricao" id='descricao'>
+            </div>
+
+            <div>
+                <input type="submit" onclick="alert('Entenderam? Também não')" value="Enviar">
+            </div>
+        </form>
+
+    </article>
+
+{%endblock%}
