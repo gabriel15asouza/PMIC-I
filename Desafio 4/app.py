@@ -3,7 +3,7 @@ import mysql.connector
 
 app = Flask (__name__)
 
-mysql = mysql.connector.connect(
+db = mysql.connector.connect(
 host = 'localhost',
 user = 'root',
 password = '1234',
@@ -26,10 +26,10 @@ def contatos():
 			assunto = request.form['assunto']
 			descricao = request.form['descricao']
 
-			cur = mysql.connection.cursor(buffered=True)
+			cur = db.cursor(buffered=True)
 			cur.execute('INSERT INTO CONTATOS (EMAIL,ASSUNTO,DESCRICAO) VALUES (%s,%s,%s)', (email, assunto, descricao))
 				
-			mysql.connection.commit()
+			db.commit()
 
 			cur.close() 	 	
 
@@ -38,11 +38,14 @@ def contatos():
 
 @app.route('/users')
 def users():
-	cur = mysql.connection.cursor(buffered=True)
+	cur = db.cursor(buffered=True)
 
-	users = cur.execute("SELECT * FROM contatos")
+	users = cur.execute("SELECT * FROM CONTATOS")
 
-	if users > 0:
-		userDetails = cur.fetchall()
-
+	userDetails = cur.fetchall()
+	
 	return render_template("users.html", userDetails=userDetails)
+
+
+
+
