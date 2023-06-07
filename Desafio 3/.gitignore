@@ -1,5 +1,0 @@
-# Ignore o ambiente virtual
-venv
-
-# Ignore o cache de arquivos py
-__pycache__
