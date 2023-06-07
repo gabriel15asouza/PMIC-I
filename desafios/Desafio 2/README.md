@@ -2,11 +2,11 @@
 Incrementar Desafio 1 com implementação do micro framework Flask e do stylehseet Normalize às páginas.
 
 ## Como usar (Quickstart):
-### Requisito
+### Requisitos:
 - Python
 
 [//]: # (breaklist)
-In the console :
+No terminal:
 
     pip install -r requirements.txt
     flask run
